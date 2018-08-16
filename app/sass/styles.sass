@@ -1,0 +1,651 @@
+@import "vars"
+
+/* ------------------------------------- 
+	Font face 
+	------------------------------------- */
+@import "fonts"
+
+/* ------------------------------------- 
+	Reset 
+	------------------------------------- */
+@import "reset"
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.nowrap
+	white-space: nowrap
+
+.text-center
+	text-align: center
+
+/* ------------------------------------- 
+	Common styles 
+	------------------------------------- */
+
+
+.wrapper
+	padding: 0 35px
+	background: url('../img/decor3.png') no-repeat 50% 100%
+
+.title
+	text-transform: uppercase
+	color: $accent-color
+
+.subtitle
+	text-transform: uppercase
+
+.btn
+	display: block
+	padding: 0
+	font-weight: 300
+	text-transform: uppercase
+	border: none
+	background: $accent-color
+	color: #fff
+	border-radius: 2px
+	cursor: pointer
+	transition: all .2s ease-in
+	&:hover
+		background: darken($accent-color, 10%)
+		transition: all .2s ease-in
+	&:focus
+		outline: none
+	&:active
+		transform: translate(1px, 1px)
+		transition: all .2s ease-in
+
+.checkbox 
+	margin: 0 15px 0 0
+	cursor: pointer
+	vertical-align: top
+	font-size: 0
+	display: inline-flex
+	&:last-child
+		margin-right: 0
+
+	.checkbox-hidden
+		display: none
+
+	.checkbox-wrap
+		display: inline-block
+		vertical-align: middle
+		width: 40px
+		height: 40px
+		flex: 0 0 40px
+
+	.checkbox-pseudo
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-bottom: 4px
+		width: 100%
+		height: 100%
+		border: 5px solid #e65e38
+		border-radius: 50%
+		position: relative
+		&--black
+			background-color: #000
+		&--gray
+			background-color: #d7d6db
+		&--gold
+			background-color: #b08358
+		&--blue
+			background-color: #34477d
+			
+	.checkbox-check 
+		display: block
+		width: 20px
+		height: 25px
+		stroke: $accent-color
+		stroke-dasharray: 19px
+		stroke-dashoffset: 20px
+		transition: .2s ease-out
+
+.checkbox 
+	input[type=radio]
+		&:checked
+			+ .checkbox-wrap
+				.checkbox-pseudo
+					border-color: transparent
+					transition: all .2s
+					.checkbox-check
+						stroke-dashoffset: 36px
+
+
+
+.fancybox-button--zoom, .fancybox-button--thumbs
+	display: none !important
+
+
+/* ------------------------------------- 
+	first__block 
+	------------------------------------- */
+
+
+/* ------------------------------------- 
+	models 
+	------------------------------------- */
+.models
+	margin-top: 50px
+	padding-top: 20px
+	background: url('../img/decor1.png') no-repeat 50% 50%
+	position: relative
+	z-index: 1
+	&::after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background-color: rgba(#eee, .7)
+		z-index: -1
+	> .title
+		font-size: 50px
+		line-height: 1
+		text-align: center
+	.subtitle
+		font-size: 22px
+		line-height: 1	
+		color: #222222
+		text-align: center
+
+	&-row
+		display: flex
+		flex-wrap: wrap
+		&.hide
+			display: none
+
+.model
+	display: flex
+	justify-content: center
+	flex: 0 0 50%
+	max-width: 50%
+	position: relative
+	&-description
+		position: absolute
+		top: 182px
+	&-1-description
+		right: 50px
+	&-2-description
+		left: 50px
+	&-name
+		margin: 0
+		font-size: 55px
+		font-weight: 500
+		line-height: 1
+		text-align: center
+		letter-spacing: 2px
+		&-add
+			height: 35px
+			font-size: 35px
+			font-weight: 600
+			line-height: 1
+			text-align: center
+
+	&-more
+		width: 290px
+		margin: 18px auto 0
+		padding: 6px
+		font-size: 27px
+
+	&-sheme
+		max-width: 690px
+		width: 100%
+		position: relative
+		&-2 img
+			margin-left: auto
+		&-points
+			margin: 0
+			padding: 0
+			list-style: none
+			color: $accent-color
+			font-size: 32px
+			font-weight: 300
+		&-point
+			position: absolute
+			line-height: 1
+			padding-bottom: 5px
+			letter-spacing: -1px
+			text-align: center
+			border-bottom: 2px solid $accent-color
+			opacity: 0
+		&-1
+			&-point-1
+				max-width: 360px
+				top: 130px
+				left: 338px
+			&-point-2
+				max-width: 317px
+				top: 317px
+				left: 253px
+			&-point-3
+				max-width: 225px
+				top: 494px
+				left: 368px
+
+		&-2
+			&-point-1
+				top: 140px
+				right: 315px
+			&-point-2
+				max-width: 280px
+				top: 327px
+				right: 315px
+			&-point-3
+				max-width: 215px
+				top: 518px
+				right: 227px
+
+	&-chars
+		max-width: 560px
+		width: 100%
+		padding: 30px 10px 0
+		border-radius: 5px
+		background-color: rgba(#222, .75)
+		&.animate
+			.model-advantages
+				li:before
+					animation: rotation 2s ease
+				.model-1-advantage-1:before
+					animation-delay: 0s
+				.model-1-advantage-2:before
+					animation-delay: .2s
+				.model-1-advantage-3:before
+					animation-delay: .4s
+		&__title
+			margin: 0
+			line-height: 1
+			font-size: 71px
+			font-weight: bold
+			text-transform: uppercase
+			text-align: center
+			color: #eee
+			&-add
+				margin-bottom: -15px
+				text-align: center
+				color: #eee
+				font-size: 43px
+				line-height: 1
+				font-weight: bold
+		&__list-title
+			margin-top: 50px
+			color: #dbdada
+			font-size: 30px
+			line-height: 1
+			font-weight: 300
+			text-align: center
+			text-transform: uppercase
+			letter-spacing: -1px
+		&__list
+			max-width: 475px
+			margin: 0 auto
+			padding-left: 0
+			list-style: none
+			color: #eee
+			font-size: 22px
+			line-height: 1.1
+			font-weight: 300
+			letter-spacing: -1px
+			li
+				&::before
+					content: '-'
+					margin: 0 2px
+					color: #eee
+					font-size: 22px
+					font-weight: 300
+	
+	&-advantages
+		margin: 30px 0 0
+		padding-left: 0
+		list-style: none
+		display: flex
+		justify-content: space-between
+		li
+			width: 173px
+			height: 172px
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			line-height: 1
+			text-align: center
+			color: #dbdada
+			position: relative
+			&::before
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0
+				top: 0
+				background: url('../img/decor2.png') no-repeat 50% 50%
+				background-size: 100%
+				z-index: 0
+		
+.model-advantage-1
+	font-size: 26px	
+	letter-spacing: -1px
+.model-advantage-2
+	font-size: 28px	
+.model-advantage-3
+	font-size: 25px	
+	flex-direction: column
+	div
+		display: block
+		font-size: 28px
+
+
+.model-simple, .model-360
+	display: none
+	&.flex
+		.model-sheme-point
+			animation: fadeIn .5s ease forwards
+		.model-sheme-1-point-2, .model-sheme-2-point-2
+			animation-delay: .4s
+		.model-sheme-1-point-3, .model-sheme-2-point-3
+			animation-delay: .8s
+
+.flex
+	display: flex !important
+	flex-wrap: wrap
+	&-center
+		align-items: center
+.col-50
+	padding: 0 10px
+	display: flex
+	justify-content: center
+	flex: 0 0 50%
+	max-width: 50%
+.order-xl
+	order: 1
+
+
+@keyframes rotation
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+@keyframes fadeIn
+	0%
+		transform: translateY(300px)
+		opacity: 0
+	100%
+		transform: translateY(0)
+		opacity: 1
+
+
+
+.model-back
+	padding: 15px 0
+	display: none
+	justify-content: center
+	&.reveal
+		display: flex
+
+	&__btn
+		width: 245px
+		height: 52px
+		border-top-left-radius: 2px
+		border-bottom-left-radius: 2px
+		font-size: 27px
+		&:hover
+			+ .btn-back-ic::before
+				transform: rotate(24deg)
+				transition: all .4s
+.btn-back-ic
+	width: 49px
+	height: 52px
+	background: #fff
+	border-top-right-radius: 2px
+	border-bottom-right-radius: 2px
+	position: relative
+	&::before
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		background: url('../img/back-arrow.png') no-repeat 50% 50%
+		z-index: 0
+		transition: all .2s
+
+
+
+
+
+
+
+/* ------------------------------------- 
+	gallery
+	------------------------------------- */
+.gallery
+	margin-top: 50px
+
+	a
+		&:focus
+			outline: none
+
+	&-page
+		position: relative
+		&-2
+			display: none
+
+	&__col
+		&-4
+			flex: 0 0 33.333333%
+			max-width: 33.333333%
+		&-5
+			flex: 0 0 41.666667%
+			max-width: 41.666667%
+		&-6
+			flex: 0 0 50%
+			max-width: 50%
+		&-7
+			flex: 0 0 58.333333%
+			max-width: 58.333333%
+		&-8
+			flex: 0 0 66.666667%
+			max-width: 66.666667%
+		&-12
+			flex: 0 0 100%
+			max-width: 100%
+		
+	&-img
+		display: block
+		width: 100%
+		height: auto
+		transform-origin: 50% 50%
+		transition: transform .1s
+		&:focus
+			outline: none
+		&:hover
+			transform: scale(1.015)
+			transition: transform .3s
+
+	&__item
+		&--1
+			height: 54vw
+		&--2
+			height: 27vw
+		&--3
+			height: 34vw
+		&--4
+			height: 20vw
+
+	&-paging
+		width: 100%
+		position: absolute
+		bottom: 0
+		left: 0
+		transform: translateY(50%)
+		display: flex
+		justify-content: center
+		&-btn
+			width: 245px
+			height: 52px
+			border-top-left-radius: 2px
+			border-bottom-left-radius: 2px
+			font-size: 27px
+		&-val
+			width: 49px
+			height: 52px
+			background: #fff
+			border-top-right-radius: 2px
+			border-bottom-right-radius: 2px
+			font-size: 38px
+			line-height: 52px
+			font-weight: 600
+			color: $accent-color
+			text-align: center
+
+
+
+
+
+/* ------------------------------------- 
+	offer
+	------------------------------------- */
+.offer
+	margin-top: 50px
+	padding: 40px 0
+	background-color: rgba(#eee ,.7)
+	border-radius: 2px
+
+	&-col
+		flex: 0 0 50%
+		max-width: 50%
+
+	&-img-block
+		justify-content: center
+		align-items: center
+	&-img
+		max-width: 530px
+		// height: 640px
+		margin: 0 auto
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		img
+			height: 600px
+			&:not(:first-child)
+				display: none
+
+	&-content
+		max-width: 640px
+
+	&-title
+		font-size: 91px
+		line-height: 1
+		font-weight: 700
+		text-transform: uppercase
+
+	&-list-title
+		color: #4f4f4f
+		font-size: 35px
+		font-weight: 400
+		text-transform: uppercase
+		letter-spacing: -1px
+
+	&-list
+		max-width: 630px
+		margin: 0
+		padding-left: 0
+		list-style: none
+		color: #4f4f4f
+		font-size: 30px
+		line-height: 1.1
+		font-weight: 300
+		letter-spacing: -1px
+		&:not(:first-child)
+			display: none
+		li
+			&::before
+				content: '-'
+				margin: 0 2px
+				color: #4f4f4f
+				font-size: 30px
+				font-weight: 300
+
+	&-choose
+		margin-top: 50px
+	
+	&-purchase
+		margin-top: 20px
+		padding: 20px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-top: 5px solid #d1cfcf
+		border-bottom: 5px solid #d1cfcf
+
+	&-price-val
+		color: #4f4f4f
+		font-size: 58px
+		font-weight: bold
+		text-transform: uppercase
+		&::before
+			content: '₽'
+			font-size: 58px
+			font-weight: bold
+			text-transform: uppercase
+			margin-right: 20px
+		&:not(:first-child)
+			display: none
+
+	&-btn-wrap
+		display: flex
+	&-btn
+		width: 246px
+		height: 57px
+		border-top-left-radius: 2px
+		border-bottom-left-radius: 2px
+		color: #dbdada
+		font-size: 40px
+		font-weight: 400
+		letter-spacing: -1px
+
+	&-info
+		color: #4f4f4f
+		font-size: 23px
+		font-weight: 700
+		letter-spacing: -1px
+		text-transform: uppercase
+
+.cart-ic
+	display: block
+	width: 75px
+	height: 57px
+	border-top-right-radius: 2px
+	border-bottom-right-radius: 2px
+	background: #fff url('../img/cart-ic.png') no-repeat 50% 50%
+
+
+.offer-purchase-block
+	margin-left: auto
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- 
+	Media styles 
+	------------------------------------- */
+@import "media"

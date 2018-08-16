@@ -1,0 +1,408 @@
+@import "vars"
+
+
+@media only screen and (max-width : 1900px)
+
+	/* ------------------------------------- 
+		models 
+		------------------------------------- */
+	.model
+		&-1
+			justify-content: flex-start
+		&-2
+			justify-content: flex-end
+
+	.model-sheme-points
+		font-size: 28px
+
+	/**/
+
+
+@media only screen and (max-width : 1199px)
+
+	/* ------------------------------------- 
+		Common styles 
+		------------------------------------- */
+	.order-xl
+		order: 0
+
+	/* ------------------------------------- 
+		first__block 
+		------------------------------------- */
+
+
+	/* ------------------------------------- 
+		models 
+		------------------------------------- */
+	.model
+		flex: 0 0 100%
+		max-width: 100%
+		&-1
+			justify-content: flex-start
+		&-2
+			justify-content: flex-end
+			margin-top: -100px
+		&-img
+			max-height: 500px
+		
+		&-name
+			letter-spacing: -1px
+		&-name-add
+			height: auto
+
+		&-sheme
+			img
+				max-height: 500px
+
+			&-1
+				&-point-1
+					max-width: 310px
+					top: 87px
+					left: 260px
+				&-point-2
+					max-width: 275px
+					top: 247px
+					left: 205px
+				&-point-3
+					max-width: 197px
+					top: 375px
+					left: 300px
+
+			&-2
+				&-point-1
+					max-width: 310px
+					top: 94px
+					right: 227px
+				&-point-2
+					max-width: 275px
+					top: 247px
+					right: 205px
+				&-point-3
+					max-width: 197px
+					top: 375px
+					right: 300px
+
+
+	.model-advantages
+		margin-bottom: -20px
+		li::before
+			transform: rotate(52deg)
+			animation: none !important
+
+
+
+	.col-50
+		flex: 0 0 100%
+		max-width: 100%
+
+
+
+
+	/* ------------------------------------- 
+		offer
+		------------------------------------- */
+	.offer-img img
+		height: 500px
+	.offer-title
+		font-size: 48px
+	.offer-list-title
+		font-size: 30px
+	.offer-list, .offer-list li::before
+		font-size: 21px
+
+	.offer-purchase-block
+		flex: 0 0 100%
+		max-width: 100%
+
+	.offer-content
+		max-width: 100%
+		padding: 0 15px
+		&.pl-0
+			padding-left: 0
+
+
+
+
+	/**/
+
+
+
+@media only screen and (max-width : 767px)
+
+	.wrapper
+		padding: 0
+
+
+
+	.models, .gallery, .offer
+		margin-top: 30px
+
+	/* ------------------------------------- 
+		models 
+		------------------------------------- */
+	.models
+		> .title
+			font-size: 27px
+		.subtitle
+			font-size: 14px
+	.model
+		&-2
+			margin-top: -50px
+		&-img
+			max-height: 65vw
+		&-description
+			top: 150px
+		&-name
+			font-size: 34px
+			letter-spacing: -1px
+			&-add
+				font-size: 22px
+		&-more
+			margin-top: 5px
+			padding: 3px
+			width: 150px
+			font-size: 14px
+
+		&-sheme
+			max-width: 350px
+			img
+				max-height: 250px
+			&-points
+				li
+					font-size: 15px
+
+			&-1
+				&-point-1
+					max-width: 200px
+					top: 33px
+					left: 160px
+				&-point-2
+					max-width: 175px
+					top: 114px
+					left: 105px
+				&-point-3
+					max-width: 97px
+					top: 175px
+					left: 149px
+
+			&-2
+				&-point-1
+					max-width: 200px
+					top: 48px
+					right: 116px
+				&-point-2
+					max-width: 175px
+					top: 116px
+					right: 117px
+				&-point-3
+					max-width: 157px
+					top: 185px
+					right: 83px
+
+	.model-chars
+		max-width: 400px
+		padding: 10px
+		overflow: hidden
+		&__title
+			font-size: 29px
+			&-add
+				font-size: 20px
+				margin-bottom: 0
+		&__list-title
+			margin-top: 5px
+			font-size: 16px
+		&__list
+			font-size: 14px
+			li
+				line-height: 1.2
+				&::before
+					font-size: 14px
+		.model-advantages
+			margin-top: -15px
+			justify-content: center
+			li
+				display: block
+				width: 95px
+				height: 95px
+				margin: 0
+				padding: 53px 0 0
+				&:before
+					top: 35px
+				.br
+					display: block
+	.model-advantage-1,
+	.model-advantage-2,
+	.model-advantage-3
+		font-size: 13px
+
+
+	.model-back
+		&__btn
+			font-size: 14px
+			width: 125px
+			height: 30px
+		.btn-back-ic
+			width: 30px
+			height: 30px
+			&::before
+				background-size: 75% 75%
+	
+
+	/* ------------------------------------- 
+		gallery
+		------------------------------------- */
+	.gallery-paging
+		&-btn
+			font-size: 14px
+			width: 125px
+			height: 30px
+		&-val
+			width: 30px
+			height: 30px
+			font-size: 14px
+			line-height: 30px
+
+
+
+
+
+	/* ------------------------------------- 
+		offer
+		------------------------------------- */
+	.offer-img img
+		height: 450px
+	.offer-title
+		font-size: 39px
+	.offer-list-title
+		font-size: 26px
+	.offer-list, .offer-list li::before
+		font-size: 20px
+
+	.offer-choose
+		margin-top: 30px
+
+	.offer
+		.checkbox 
+			margin: 0 9px 0 0
+			&:last-child
+				margin-right: 0
+			.checkbox-wrap
+				width: 27px
+				height: 27px
+				flex: 0 0 27px
+			.checkbox-pseudo
+				border: 2px solid #e65e38
+			.checkbox-check
+				width: 15px
+				height: 20px
+	
+	.offer-price-val, .offer-price-val::before
+		font-size: 48px
+	.offer-btn
+		width: 210px
+		height: 52px
+		font-size: 36px
+	.cart-ic
+		width: 62px
+		height: 52px
+
+	.offer-info
+		font-size: 20px
+		text-align: center
+
+
+
+
+		
+
+	/**/
+
+
+@media only screen and (max-width : 575px)
+
+	/* ------------------------------------- 
+		models 
+		------------------------------------- */
+	.model
+		&-1
+			justify-content: flex-start
+		&-2
+			justify-content: flex-end
+			margin-top: -50px
+		&-img
+			max-height: 70vw
+		&-description
+			top: 25vw
+		&-1-description
+			right: auto
+			left: 26vw
+		&-2-description
+			left: auto
+			right: 32vw
+
+
+
+
+	/* ------------------------------------- 
+		offer
+		------------------------------------- */
+	.offer-img-block
+		flex: 0 0 45%
+		max-width: 45%
+		justify-content: flex-start
+	.offer-advanced-block
+		flex: 0 0 55%
+		max-width: 55%
+
+	.offer-img img
+		height: 220px
+	.offer-title
+		font-size: 24px
+	.offer-list-title
+		font-size: 15px
+	.offer-list, .offer-list li::before
+		font-size: 15px
+
+	.offer-choose
+		margin-top: 10px
+
+	.offer
+		.checkbox 
+			margin: 0 .5vw 0 0
+			&:last-child
+				margin-right: 0
+
+	
+	.offer-purchase
+		margin-top: 10px
+		padding: 10px 0
+		border-top-width: 1px
+		border-bottom-width: 1px
+
+	.offer-price-val, .offer-price-val::before
+		font-size: 37px
+	.offer-price-val::before
+		margin-right: 10px
+
+	.offer-btn
+		width: 114px
+		height: 27px
+		font-size: 19px
+	.cart-ic
+		width: 35px
+		height: 27px
+		background-size: 80%
+
+	.offer-info
+		margin-top: 10px
+		font-size: 14px
+		line-height: 1.1
+		text-align: center
+
+
+	/**/
+
+
+@media only screen and (max-width : 480px)
+
+	/**/
