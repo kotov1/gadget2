@@ -35,15 +35,101 @@
 
 <body>
 
-	<!-- First block -->
-	<div style="height: 300px; background: #000;"></div>
-	<!-- First block end -->
+	<!-- Header block begin -->
+	<header class="header">
+		<div class="container1430">
+			<div class="myRow sz_aic">
+	
+				<div class="menuMobile menuMobile-js">
+					<a href="#">меню</a>
+				</div>
+	
+				<div class="logo">
+					<a href="index.php">
+						<img class="img-responsive" src="img/logo.png" alt="лого">
+					</a>
+				</div>		
+				
+				<div class="feedbackMobile feedbackMobile-js">
+					<a href="#"></a>
+				</div>
+	
+				<div class="navWrap">
+					<nav class="nav">
+						<ul class="navList">
+							<li><a href="#hero">главная</a></li>
+							<li><a href="#models">модели</a></li>
+							<li><a href="#gallery">галерея</a></li>
+							<li><a href="#offer">купить</a></li>
+							<li><a href="#footer">контакты</a></li>
+						</ul>
+					</nav>
+	
+					<div class="tel">
+						<a href="tel:+79995891111">+7 (999) 589 11 11</a>
+						<a href="tel:+73519455529">+7 (3519) 45 55 29</a>
+					</div>				
+	
+					<div class="social">
+						<ul>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+		<!-- Header block end -->
 
 
-	<!-- models -->
-	<div class="wrapper">
 
-		<div class="models">
+		<!-- Hero section begin -->
+		<section class="hero" id="hero">
+			<div class="container1430">
+				<div class="myRow sz_jcc">
+					<div class="hero__descr">
+						<h1 class="hero__title">led hi tech</h1>
+						<h2 class="hero__subtitle">светильник трансформер<br>с аккумулятором</h2>
+						<p>УДОБЕН ДЛЯ ОСВЕЩЕНИЯ РАБОЧЕЙ ЗОНЫ</p>
+						<p>НЕЗАМЕНИМ В ПУТЕШЕСТВИЯХ</p>
+						<p>СТАНЕТ ЦЕННЫМ ПОДАРКОМ ДЛЯ ТЕХ, КТО ЛЮБИТ ОРИГИНАЛЬНЫЙ ДИЗАЙН</p>
+					</div>
+				</div>
+	
+						<div class="bottomMore">
+							<a href="#models">подробней<span>&#8744;</span></a>
+						</div>
+	
+			</div>
+			<div class="feedbackForm">
+				<a class="feedbackFormBtn-js feedbackFormBtn" href="#"><span class="feedbackFormBtn__text">обратная связь</span><span class="feedbackFormBtn__arrow">&#8743;</span></a>
+				<div class="feedbackForm__hiddenForm">
+					<h3 class="formTitleMobi">обратная связь</h3>
+					<div class="feedbackFormBlock contactForm">
+						<form action="#" method="POST">
+							
+							<div class="contactForm__item contactForm__name"><input type="text" name="name" placeholder="введите ваше имя" required><span class="formValid"><i class="formCheck"></i></span></div>
+							<div class="contactForm__item contactForm__tel"><input type="tel" name="tel" placeholder="введите ваш телефон" maxlength="20" pattern="[^A-Za-zА-Яа-яЁё]{3,20}" required><span class="formValid"><i class="formCheck"></i></span></div>
+							<div class="contactForm__item contactForm__name feedbackForm__textarea"><textarea name="massage" cols="30" rows="3" placeholder="Здесь вы можете оставить сообщение"></textarea></div>
+							<p class="comingSoon">скоро с вами свяжутся</p>
+							<div class="contactForm__submit"><input type="submit" value="отправить"></div>
+						</form>
+					</div>
+	
+				</div>
+				
+			</div>
+		</section>
+		<!-- Hero section end -->
+
+
+
+		<div class="wrapper">
+			
+		<!-- models -->
+		<div class="models" id="models">
 			<h2 class="title">модельный ряд</h2>
 			<h3 class="subtitle">виды led светильников</h3>
 
@@ -52,7 +138,7 @@
 					<img src="img/item1.png" alt="led hi tech" class="img-responsive model-img">
 					<div class="model-description model-1-description">
 						<h4 class="title model-name">led hi tech</h4>
-						<div class="title model-name-add"></div>
+						<div class="title model-name-add">стандарт</div>
 						<button type="button" class="btn model-more" data-model="1">подробней</button>
 					</div>
 				</div>
@@ -88,6 +174,7 @@
 
 						<div class="model-chars animate">
 							<h4 class="model-chars__title">led hi tech</h4>
+							<div class="model-chars__title-add">стандарт</div>
 							<div class="model-chars__list-title">характеристики</div>
 							<ul class="model-chars__list">
 								<li>поворот светового модуля в две стороны</li>
@@ -108,9 +195,8 @@
 				</div>
 				<!-- /.model-simple -->
 				
+
 				<div class="model-360 flex-center">
-
-
 
 					<div class="col-50 order-xl">
 			
@@ -166,7 +252,7 @@
 
 
 		<!-- gallery -->
-		<div class="gallery animate" id="gallery">
+		<div class="gallery" id="gallery">
 
 			<div class="gallery-page gallery-page-1">
 
@@ -305,7 +391,7 @@
 
 
 		<!-- offer -->
-		<div class="offer">
+		<div class="offer" id="offer">
 			<div class="flex">
 
 				<div class="offer-col offer-img-block">
@@ -316,6 +402,13 @@
 						<img src="img/offer/offer-img-4.png" alt="Светильник трансформер" class="offer-item img-responsive">
 						<img src="img/offer/offer-img-5.png" alt="Светильник трансформер" class="offer-item img-responsive">
 					</div>
+					<div class="offer-img-descr">
+						<div class="offer-img-descr-text c-black">Цвет: черный</div>
+						<div class="offer-img-descr-text c-gray">Цвет: серебристый</div>
+						<div class="offer-img-descr-text c-gold">Цвет: золотой</div>
+						<div class="offer-img-descr-text c-blue">Цвет: серо-синий</div>
+						<div class="offer-img-descr-text c-gray">Цвет: серебристый</div>
+					</div>
 				</div>
 				<!-- /.offer-col -->
 
@@ -323,6 +416,11 @@
 					<div class="offer-content pl-0">
 
 						<h2 class="title offer-title">led hi tech</h2>
+
+						<div class="model-types">
+							<div class="model-type model-type-1">стандарт</div>
+							<div class="model-type model-type-2">360</div>
+						</div>
 
 						<div class="offer-list-title">характеристики</div>
 
@@ -369,7 +467,7 @@
 								</label>
 
 								<label class="checkbox">
-									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="Обычный, серый">
+									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="Обычный, серебристый">
 									<span class="checkbox-wrap">
 										<span class="checkbox-pseudo checkbox-pseudo--gray">
 											<svg class="checkbox-check" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 12 10">
@@ -391,7 +489,7 @@
 								</label>
 
 								<label class="checkbox">
-									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="360, голубой">
+									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="360, серо-голубой">
 									<span class="checkbox-wrap">
 										<span class="checkbox-pseudo checkbox-pseudo--blue">
 											<svg class="checkbox-check" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 12 10">
@@ -402,7 +500,7 @@
 								</label>
 
 								<label class="checkbox">
-									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="360, серый">
+									<input type="radio" class="checkbox-hidden offer-chose-checkbox" name="offer-chose" data-item="360, серебристый">
 									<span class="checkbox-wrap">
 										<span class="checkbox-pseudo checkbox-pseudo--gray">
 											<svg class="checkbox-check" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 12 10">
@@ -449,17 +547,124 @@
 		<!-- offer end -->
 
 
+
+		<footer class="footer" id="footer">
+
+			<div class="footerBlock">
+				<div class="logo">
+					<a href="index.php">
+						<img class="img-responsive" src="img/logo.png" alt="лого">
+					</a>
+				</div>	
+					
+				<h3 class="footer__title">контакты</h3>
+	
+					<div class="tel">
+						<a href="tel:+79995891111">+7 (999) 589 11 11</a>
+						<a href="tel:+73519455529">+7 (3519) 45 55 29</a>
+						<a href="mailto:lgadget@list.ru">lgadget@list.ru</a>
+					</div>		
+		
+				<div class="social">
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				</div>
+		</footer>
+
+
+		<!-- information -->
+		<div class="information">
+			<p class="information__title">Ваш надежный поставщик!</p>
+				
+			<p class="information__text">ИП Иванов И.А., св-во о гос. регистрации № ИНН 1234567890123</p>
+		</div>
+
+
 	</div>
 	<!-- /.wrapper end -->
 
 
 
 
+	<!-- POPUP BEGIN -->
+	<div class="container1430">
+		<div class="myRow">
+			<div class="cd-popup" role="alert">
+				<div class="cd-popup-container">
+				<!--paste content begin-->
+						<form action="#" method="POST">
+
+							<div class="popupBuyFormBlock contactForm">
+
+								<div class="popupBuyForm__leftForm">
+								
+									<div class="contactForm__item contactForm__name"><input type="text" name="name" placeholder="ФИО" required><span class="formValid"><i class="formCheck"></i></span></div>
+
+									<div class="contactForm__item contactForm__tel"><input type="tel" name="tel" placeholder="введите ваш телефон" maxlength="20" pattern="[^A-Za-zА-Яа-яЁё]{3,20}" required><span class="formValid"><i class="formCheck"></i></span></div>
+									
+									<div class="contactForm__item contactForm__name"><input type="text" name="adress" placeholder="Индекс, город, адресс" required><span class="formValid"><i class="formCheck"></i></span></div>
+
+									<div class="contactForm__item contactForm__name"><input type="email" name="email" placeholder="E-mail" required><span class="formValid"><i class="formCheck"></i></span></div>
+
+									<input type="hidden" name="Цвет товара" id="hiddenColorInput"> 
+
+									<div class="contactForm__item contactForm__name"><textarea name="massage" cols="30" rows="5" placeholder="Здесь вы можете оставить сообщение"></textarea></div>	
+
+								</div>
 
 
-	<div style="height: 300px; background: #000;"></div>
+								
+
+							<div class="popupBuyForm__Note">
+								<ul>
+									<li>инструкция</li>
+									<li>- заполните необходимые поля для подтверждения заказа.</li>
+									<li>- нажмите кнопку заказать</li>
+									<li>- в скором времени с вами свяжется оператор для подтверждения заказа</li>
+								</ul>
+							</div>
+
+						</div>
+						
+
+						<div class="contactForm__submit popupBuyForm__submit"><input type="submit" value="заказать"></div>
+
+						</form>
+		
+		
+		
+						
+				<!--paste content end-->
+				<a href="#0" class="cd-popup-close img-replace">Close</a>
+				</div>
+				<!-- cd-popup-container -->
+			</div>
+			<!-- cd-popup -->
+		</div>
+	</div>
+	<!-- POPUP END -->
 
 
+	<!-- POPUP BEGIN -->
+	<div class="container1430">
+		<div class="myRow">
+			<div class="cd-popup2" role="alert">
+				<div class="cd-popup-container">
+				<!--paste content begin-->
+				<h3>остались вопросы?<br> мы с удовольствием на них ответим</h3>
+			
+				<!--paste content end-->
+				<a href="#0" class="cd-popup-close img-replace">Close</a>
+				</div>
+				<!-- cd-popup-container -->
+			</div>
+			<!-- POPUP END -->
+		</div>
+	</div>
 
 
 

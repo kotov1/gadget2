@@ -25,6 +25,9 @@
 		------------------------------------- */
 	.order-xl
 		order: 0
+	
+	.information
+		font-size: 27px
 
 	/* ------------------------------------- 
 		first__block 
@@ -103,8 +106,13 @@
 		------------------------------------- */
 	.offer-img img
 		height: 500px
+	.offer-img-descr
+		font-size: 32px
 	.offer-title
 		font-size: 48px
+	.offer .model-types
+		font-size: 30px
+		text-align: left
 	.offer-list-title
 		font-size: 30px
 	.offer-list, .offer-list li::before
@@ -130,9 +138,12 @@
 @media only screen and (max-width : 767px)
 
 	.wrapper
-		padding: 0
+		padding: 0 0 15px
 
 
+	.information
+		padding: 0 15px
+		font-size: 18px
 
 	.models, .gallery, .offer
 		margin-top: 30px
@@ -271,8 +282,12 @@
 		------------------------------------- */
 	.offer-img img
 		height: 450px
+	.offer-img-descr
+		font-size: 28px
 	.offer-title
 		font-size: 39px
+	.offer .model-types
+		font-size: 20px
 	.offer-list-title
 		font-size: 26px
 	.offer-list, .offer-list li::before
@@ -356,6 +371,8 @@
 
 	.offer-img img
 		height: 220px
+	.offer-img-descr
+		font-size: 18px
 	.offer-title
 		font-size: 24px
 	.offer-list-title
@@ -403,6 +420,497 @@
 	/**/
 
 
-@media only screen and (max-width : 480px)
 
-	/**/
+
+
+
+
+
+
+
+
+
+
+
+/*====================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 1199px)
+
+	/* ------------------------------------- 
+		Common styles 
+		------------------------------------- */
+
+	/* ------------------------------------- 
+		header__block  begin
+		------------------------------------- */
+	.header
+		.logo
+			max-width: 190px
+		.navList
+			a
+				font-size: 19px
+				padding: 18px 5px
+	.tel
+		a
+			font-size: 20px
+	/* ------------------------------------- 
+		header__block  end
+		------------------------------------- */
+
+
+	/* ------------------------------------- 
+		hero__block  begin
+		------------------------------------- */
+
+	.hero
+		background-position: 30% 50%
+		&__title
+			font-size: 115px
+		&__subtitle
+			font-size: 55px
+		&__descr
+			p
+				font-size: 18px
+		.bottomMore
+			span
+				font-size: 22px
+			a
+				font-size: 22px
+
+	/* ------------------------------------- 
+		header__block  ends
+		------------------------------------- */
+
+
+	/* ------------------------------------- 
+		popup form begin
+		------------------------------------- */
+	.popupBuyForm__leftForm
+		input
+		input,textarea
+			font-size: 26px
+		.formValid
+			height: 50px
+	.popupBuyForm__Note
+		li
+			font-size: 26px
+	.popupBuyForm__submit
+		width: 350px
+		input
+			font-size: 36px
+			width: 350px
+
+	/* ------------------------------------- 
+		popup form end
+		------------------------------------- */
+
+@media only screen and (max-width : 991px)
+	/* ------------------------------------- 
+		header__block begin
+		------------------------------------- */
+	.header
+		.logo
+			max-width: 130px
+		.navList
+			a
+				font-size: 17px
+				padding: 18px 3px
+	.tel
+		a
+			font-size: 16px
+	/* ------------------------------------- 
+		header__block end
+		------------------------------------- */
+
+
+
+	/* ------------------------------------- 
+		hero__block  begin
+		------------------------------------- */
+
+	.hero
+		&__title
+			font-size: 100px
+		&__subtitle
+			font-size: 48px
+		&__descr
+			p
+				font-size: 16px
+		.bottomMore
+			span
+				font-size: 20px
+			a
+				font-size: 20px
+				width: 240px
+
+	/* ------------------------------------- 
+		hero_block  end
+		------------------------------------- */
+
+
+
+	/* ------------------------------------- 
+		popup form begin
+		------------------------------------- */
+	.popupBuyForm__leftForm
+		input
+		input,textarea
+			font-size: 20px
+		.formValid
+			height: 45px
+			width: 50px
+	.popupBuyForm__Note
+		li
+			font-size: 22px
+	.popupBuyForm__submit
+		width: 300px
+		input
+			font-size: 26px
+			width: 280px
+
+	/* ------------------------------------- 
+		popup form end
+		------------------------------------- */
+
+
+@media only screen and (max-width : 767px)
+
+	/* ------------------------------------- 
+		header__block begin
+		------------------------------------- */
+	.feedbackForm
+		display: none
+	.feedbackMobile
+		display: block
+		margin-right: -15px
+	.menuMobile
+		display: block
+		margin-left: -15px
+		a
+			height: 50px
+			width: 90px
+			padding-top: 12px
+			display: block
+		&:hover
+			background-color: $accent-color
+	.header
+		padding-top: 0
+		height: 50px
+		.tel
+			text-align: center
+			a
+				color: #423e3e
+				font-size: 16px
+		.navList
+			height: 50px
+		.logo
+			max-width: 200px
+		.navWrap
+			display: none
+		.social
+			display: block
+			ul
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				li
+					a
+						display: block
+						width: 32px
+						height: 32px
+						margin: 10px 10px 20px
+						//background-size: cover
+				li:nth-child(1)
+					a
+						background: url(../img/insta.png) no-repeat center center
+				li:nth-child(2)
+					a
+						background: url(../img/fb.png) no-repeat center center
+				li:nth-child(3)
+					a
+						background: url(../img/vk.png) no-repeat center center
+		//мобильное меню
+		.navWrap
+			overflow-y: auto
+			position: absolute
+			left: 0
+			top: 50px
+			max-width: 250px
+			height: calc(100vh - 50px)
+			max-height: 400px
+			background: rgba(238, 238, 238, 0.9)
+		.navList
+			flex-direction: column
+			height: auto
+			li
+				width: 100%
+			a
+				font-size: 25px
+				padding: 12px 3px
+				color: #423e3e
+				border-bottom: 2px solid transparent
+				border-top: 2px solid transparent
+				&:hover
+					color: $accent-color
+					background: transparent
+					border-bottom: 2px solid $accent-color
+					border-top: 2px solid $accent-color
+
+
+	//мобильна форма обратного звонка
+	.feedbackForm
+		top: 50px
+		right: 0
+		border-radius: 0
+		bottom: auto
+		.formValid
+			display: none
+		.feedbackForm__hiddenForm
+			border: 1px solid $accent-color
+			display: block
+		.feedbackFormBtn
+			display: none
+		.contactForm__item
+			border: 2px solid $accent-color
+			border-radius: 5px
+	.formTitleMobi
+		display: block
+		font-size: 16px
+		color: #eee
+		background: $accent-color
+		font-weight: 300
+		height: 32px
+		line-height: 32px
+
+	.feedbackForm__textarea,
+	.feedbackFormBtn__text
+		display: block
+
+	
+	/* ------------------------------------- 
+		header__block end
+		------------------------------------- */
+
+
+
+	/* ------------------------------------- 
+		hero__block  begin
+		------------------------------------- */
+
+	.hero
+		height: calc(100vh - 50px)
+		margin-top: 50px
+		&__title
+			font-size: 70px
+		&__subtitle
+			font-size: 34px
+		&__descr
+			p
+				font-size: 16px
+		.bottomMore
+			span
+				font-size: 18px
+			a
+				font-size: 18px
+				width: 220px
+
+	/* ------------------------------------- 
+		hero_block  end
+		------------------------------------- */
+
+
+	/* ------------------------------------- 
+		FOOTER section begin
+		------------------------------------- */
+	.footer
+		margin: 15px 10px 0
+	.footerBlock
+		border-width: 2px
+		.social
+			ul
+				margin-bottom: 0
+				li
+					a
+						margin: 10px 5px 10px
+						width: 50px
+						height: 50px
+				li:nth-child(1)
+					a
+						background: url(../img/insta.png) no-repeat center center
+				li:nth-child(2)
+					a
+						background: url(../img/fb.png) no-repeat center center
+				li:nth-child(3)
+					a
+						background: url(../img/vk.png) no-repeat center center
+
+	/* ------------------------------------- 
+		FOOTER section begin
+		------------------------------------- */
+
+
+
+
+	/* ------------------------------------- 
+		popup form end
+		------------------------------------- */
+	.popupBuyFormBlock
+		flex-direction: column
+		max-width: 450px
+		margin: 0 auto
+	.popupBuyForm__leftForm
+		order: 2
+		flex:  0 0 100%
+		max-width: 100%
+	.popupBuyForm__Note
+		order: 1
+		flex:  0 0 100%
+		max-width: 100%
+
+	/* ------------------------------------- 
+		popup form end
+		------------------------------------- */
+
+@media only screen and (max-width : 575px)
+	/* ------------------------------------- 
+		header__block begin
+		------------------------------------- */
+	.header
+		padding-top: 0
+		height: 50px
+
+	/* ------------------------------------- 
+		header__block end
+		------------------------------------- */
+
+
+
+	/* ------------------------------------- 
+		hero__block  begin
+		------------------------------------- */
+
+	.hero
+		height: calc(100vh - 50px)
+		margin-top: 50px
+		&__title
+			font-size: 64px
+		&__subtitle
+			font-size: 30px
+		&__descr
+			p
+				font-size: 16px
+		.bottomMore
+			span
+				font-size: 16px
+				width: 40px
+			a
+				font-size: 16px
+				width: 180px
+				padding-left: 15px
+
+	/* ------------------------------------- 
+		hero_block  end
+		------------------------------------- */
+
+
+
+@media only screen and (max-width : 480px)
+	/* ------------------------------------- 
+		header__block begin
+		------------------------------------- */
+	.feedbackMobile
+		a
+			height: 50px
+	.header
+		padding-top: 0
+		height: 50px
+		.logo
+			max-width: 150px
+	.menuMobile
+		a
+			height: 50px
+
+	/* ------------------------------------- 
+		header__block end
+		------------------------------------- */
+
+
+
+	/* ------------------------------------- 
+		hero__block  begin
+		------------------------------------- */
+
+	.hero
+		height: calc(100vh - 45px)
+		margin-top: 50px
+		min-height: 400px
+		&__title
+			font-size: 44px
+		&__subtitle
+			font-size: 20px
+		&__descr
+			p
+				font-size: 12px
+		.bottomMore
+			span
+				font-size: 14px
+				width: 35px
+				height: 38px
+			a
+				font-size: 14px
+				width: 160px
+				padding-left: 15px
+				height: 38px
+				line-height: 38px
+
+	/* ------------------------------------- 
+		hero_block  end
+		------------------------------------- */
+
+
+	/* ------------------------------------- 
+		popup form begin
+		------------------------------------- */
+	.popupBuyForm__leftForm
+		input
+		input,textarea
+			font-size: 18px
+		.formValid
+			height: 35px
+			width: 45px
+		.contactForm__item
+			border: 2px solid #e65e38;
+	.popupBuyForm__Note
+		padding: 10px 15px 0
+		li:first-child
+			margin-bottom: 10px
+		li
+			font-size: 16px
+	.popupBuyForm__submit
+		width: 250px
+		input
+			font-size: 20px
+			width: 250px
+			height: 45px
+	.cd-popup-container
+		width: 100%
+		padding: 15px 15px 5px
+
+	/* ------------------------------------- 
+		popup form end
+		------------------------------------- */

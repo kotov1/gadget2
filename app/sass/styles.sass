@@ -26,9 +26,8 @@
 	Common styles 
 	------------------------------------- */
 
-
 .wrapper
-	padding: 0 35px
+	padding: 0 35px 35px
 	background: url('../img/decor3.png') no-repeat 50% 100%
 
 .title
@@ -116,14 +115,339 @@
 						stroke-dashoffset: 36px
 
 
+.c-black
+	color: #000
+.c-gold
+	color: #b08358
+.c-blue
+	color: #34477d
+.c-gray
+	color: #d7d6db
+
 
 .fancybox-button--zoom, .fancybox-button--thumbs
 	display: none !important
 
 
+.sz_df
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.container1430
+	max-width: 1460px
+	margin: 0 auto
+	padding: 0 15px
+.myRow
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+.sz_ma
+	margin: auto
+.sz_aist
+	align-items: stretch
+.sz_aic
+	align-items: center
+.sz_jcsb
+	justify-content: space-between
+.sz_jcc
+	justify-content: center
+
+
+
+/*форма обратная связь начало*/
+.feedbackForm
+	position: fixed
+	z-index: 5
+	bottom: 0
+	right: 30px
+	width: 286px
+	background: rgba(238, 238, 238, 0.9)
+	border-radius: 25px 0 0 0 
+	.feedbackFormBtn
+		position: relative
+		height: 36px
+		border-radius: 25px 0 0 0 
+		background: $accent-color
+		.feedbackFormBtn__arrow
+			position: absolute
+			color: $accent-color
+			background: #fefefe
+			font-size: 25px
+			display: inline-block
+			height: 36px
+			line-height: 32px
+			width: 40px
+			right: 0
+			text-align: center
+	a
+		font-size: 22px
+		text-transform: uppercase
+		color: #fefefe
+		display: block
+		line-height: 36px
+		text-align: left
+		padding-left: 15px
+		&:hover
+			text-decoration: none
+
+	.feedbackForm__hiddenForm
+		display: none
+		p
+			margin-bottom: 0
+
+
+.arrowToggle
+	transform: rotate(180deg)
+.plTxt
+	padding-left: 75px!important
+
+.formTitleMobi
+	display: none
+
+//стили формы общие
+.contactForm
+	input,textarea
+		background: none
+		border: none
+		display: block
+		text-align: center
+		width: 100%
+		color: #000
+		font-size: 17px
+		outline: none
+		padding: 0 15px
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		text-align: center
+		justify-content: space-between
+		border: 5px solid $accent-color
+		border-radius: 5px
+		margin-bottom: 12px
+		background-color: rgb(238, 238, 238)
+	input[type="submit"]
+		font-weight: 300
+		color: #eee
+		background: $accent-color
+		margin: 0 auto
+		border-radius: 5px
+	.formValid
+		background: $accent-color
+		display: inline-block
+		width: 34px
+		height: 30px
+
+
+//стили формы обратная связь
+.feedbackFormBlock
+	max-width: 255px
+	margin: 0 auto
+	padding: 20px 0 30px
+	input[type="submit"]
+		cursor: pointer
+		font-size: 25px
+		line-height: 38px
+		font-weight: 300
+		color: #eee
+		background: $accent-color
+		max-width: 200px
+		margin: 0 auto
+		border-radius: 5px
+	p.comingSoon
+		margin-bottom: 10px
+		font-size: 16px
+		color: #595959
+		text-transform: uppercase
+
+.feedbackForm__textarea
+	display: none
+
+/*форма обратная связь конец*/
+
+.formCheck
+	display: none
+
+
 /* ------------------------------------- 
-	first__block 
+	Header block begin
 	------------------------------------- */
+.header
+	background: #413C3C
+	position: fixed
+	z-index: 99
+	width: 100%
+	top: 0
+	height: 70px
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+	.navWrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		width: 100%
+		align-items: center
+		.nav
+			text-align: center
+			margin: 0 auto
+	.navList
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		height: 100%
+		width: 100%
+		align-items: center
+		justify-content: center
+		height: 70px
+		flex-wrap: wrap
+		a
+			font-size: 23px
+			font-weight: 300
+			color: #fefefe
+			display: block
+			height: 100%
+			line-height: 1.2
+			padding: 20px 9px
+			text-transform: uppercase
+			&:hover
+				background: #E65E38
+				transition: all 0.5s
+				text-decoration: none
+	.social
+		display: none
+		ul
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+
+.tel
+	a
+		display: block
+		color: #fefefe
+		font-size: 23px
+		font-weight: bold
+		&:hover
+			text-decoration: none
+
+
+.menuMobile
+	display: none
+	background: url(../img/menu.png) no-repeat left 10px center
+	a
+		display: block
+		padding-left: 35px
+		color: #e9e4e4
+		font-size: 16px
+		text-decoration: none
+.feedbackMobile
+	display: none
+	&:hover
+		background: #fff
+	a
+		width: 60px
+		height: 50px
+		display: block
+		background: url(../img/feedbackMob.png) no-repeat center center
+
+
+
+/* ------------------------------------- 
+	HERO section
+	------------------------------------- */
+.hero
+	background: url(../img/header__bg.jpg) no-repeat left center
+	background-size: cover
+	min-height: 560px
+	height: calc(100vh - 70px)
+	margin-top: 70px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	text-align: center
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		height: 100%
+		width: 100%
+		background: rgba(0,0,0,.1)
+	&__descr
+		position: relative
+		z-index: 3
+		p
+			margin-bottom: 0
+			font-size: 21px
+			line-height: 1
+			color: #fefefe
+
+	&__title
+		font-size: 138px
+		font-weight: bold
+		color: $accent-color
+		text-transform: uppercase
+		line-height: 0.9
+		margin-bottom: 0
+	&__subtitle
+		font-size: 68px
+		color: #fefefe
+		font-weight: bold
+		line-height: 0.75
+		margin-bottom: 10px
+	.bottomMore
+		position: absolute
+		margin: 30px auto 30px
+		left: 50%
+		transform: translateX(-50%)
+		a
+			font-size: 25px
+			color: #fefefe
+			text-transform: uppercase
+			background: $accent-color
+			display: block
+			width: 268px
+			margin: 0 auto
+			height: 45px
+			line-height: 45px
+			position: relative
+			text-align: left
+			padding-left: 30px
+		span
+			position: absolute
+			color: $accent-color
+			background: #fefefe
+			font-size: 25px
+			display: inline-block
+			height: 45px
+			width: 50px
+			right: 0
+			text-align: center
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------- 
@@ -252,11 +576,11 @@
 			.model-advantages
 				li:before
 					animation: rotation 2s ease
-				.model-1-advantage-1:before
+				.model-advantage-1:before
 					animation-delay: 0s
-				.model-1-advantage-2:before
+				.model-advantage-2:before
 					animation-delay: .2s
-				.model-1-advantage-3:before
+				.model-advantage-3:before
 					animation-delay: .4s
 		&__title
 			margin: 0
@@ -273,6 +597,7 @@
 				font-size: 43px
 				line-height: 1
 				font-weight: bold
+				text-transform: uppercase
 		&__list-title
 			margin-top: 50px
 			color: #dbdada
@@ -530,7 +855,6 @@
 		align-items: center
 	&-img
 		max-width: 530px
-		// height: 640px
 		margin: 0 auto
 		display: flex
 		justify-content: center
@@ -541,14 +865,42 @@
 			&:not(:first-child)
 				display: none
 
+	&-img-descr
+		margin-top: 30px
+		padding: 0 15px
+		font-size: 40px
+		line-height: 1
+		font-weight: 500
+		text-align: center
+		text-shadow: 0 0 4px rgba(#000, .5)
+		&-text
+			&:not(:first-child)
+				display: none
+		.c-gold
+			text-shadow: 0 0 1px rgba(#000, .5)
+
+
 	&-content
 		max-width: 640px
 
 	&-title
+		margin: 0
 		font-size: 91px
 		line-height: 1
 		font-weight: 700
 		text-transform: uppercase
+
+	.model-types
+		margin-bottom: 10px
+		text-transform: uppercase
+		color: $accent-color
+		font-size: 50px
+		line-height: 1
+		text-align: center
+		font-weight: 600
+	.model-type:not(:first-child)
+		display: none
+
 
 	&-list-title
 		color: #4f4f4f
@@ -628,7 +980,7 @@
 	height: 57px
 	border-top-right-radius: 2px
 	border-bottom-right-radius: 2px
-	background: #fff url('../img/cart-ic.png') no-repeat 50% 50%
+	background: #fff url('../img/cart.png') no-repeat 50% 50%
 
 
 .offer-purchase-block
@@ -637,6 +989,218 @@
 
 
 
+
+/* ------------------------------------- 
+	FOOTER section begin
+	------------------------------------- */
+.footer
+	margin-top: 50px
+.footer__title
+	font-size: 32px
+	font-weight: normal
+	color: #eee
+	line-height: 1
+	margin-bottom: 10px
+.footerBlock
+	max-width: 1920px
+	text-align: center
+	border: 4px solid $accent-color
+	border-radius: 2px
+	.logo
+		margin: 10px auto
+		max-width: 270px
+
+	.social
+		display: block
+		ul
+			list-style-type: none
+			padding: 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			li
+				a
+					display: block
+					width: 108px
+					height: 104px
+					margin: 10px 50px 10px
+					//background-size: cover
+			li:nth-child(1)
+				a
+					background: url(../img/instaF.png) no-repeat center center
+			li:nth-child(2)
+				a
+					background: url(../img/fbF.png) no-repeat center center
+			li:nth-child(3)
+				a
+					background: url(../img/vkF.png) no-repeat center center
+
+/* ------------------------------------- 
+	FOOTER section end
+	------------------------------------- */
+
+
+
+
+.information
+	margin-top: 20px
+	text-align: center
+	color: #eee
+	font-size: 40px
+	&__title
+		margin: 0
+		line-height: 1.2
+		font-weight: 400
+	&__text
+		margin: 0
+		font-size: .75em
+
+
+
+
+
+
+
+
+/* ------------------------------------- 
+	POPUP STYLE BEGIN
+	------------------------------------- */
+
+/* popup begin */
+
+.cd-popup,
+.cd-popup2
+	position: fixed
+	z-index: 99
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	overflow-y: auto
+	padding-bottom: 120px
+	background-color: rgba(94, 110, 141, 0.9)
+
+	opacity: 0
+	visibility: hidden
+	transition: opacity 0.3s 0s, visibility 0s 0.3s
+	&.is-visible
+		opacity: 1
+		visibility: visible
+		transition: opacity 0.3s 0s, visibility 0s 0s
+
+.cd-popup-container
+	position: relative
+	width: 90%
+	margin: 30px auto
+	max-width: 1300px
+	padding: 15px
+	// background: url(../img/header__bg.jpg) no-repeat left center
+	background-size: cover
+	border-radius: .25em .25em .4em .4em
+	text-align: center
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+	// Force Hardware Acceleration in WebKit
+	-webkit-backface-visibility: hidden
+	-webkit-transition-property: -webkit-transform
+	transition-property: transform
+	transition-duration: 0.3s
+.cd-popup-container .cd-popup-close
+	position: absolute
+	top: -14px
+	right: 7px
+	width: 30px
+	height: 30px
+	&::before, &::after
+		content: ''
+		position: absolute
+		top: 12px
+		width: 24px
+		height: 4px
+		background-color: white
+	&::before
+		transform: rotate(45deg)
+		left: 0
+	&::after
+		transform: rotate(-45deg)
+		right: 6px
+
+.img-replace
+	// replace text with an image
+	display: inline-block
+	overflow: hidden
+	text-indent: 100%
+	color: transparent
+	white-space: nowrap
+
+.popupBuyFormBlock
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+.popupBuyForm__submit
+	width: 370px
+	margin: 20px auto
+	input
+		cursor: pointer
+		font-weight: 300
+		color: #eee
+		font-size: 40px
+		text-transform: uppercase
+		background: none
+		margin: 0 auto
+		border: none
+		background: url(../img/shopCart.jpg) $accent-color no-repeat center right
+		width: 370px
+		height: 65px
+		padding-right: 70px
+		display: block
+		border-radius: 5px
+
+.popupBuyForm__leftForm
+	flex: 0 0 48%
+	max-width: 48%
+	input,textarea
+		font-size: 32px
+		line-height: 1
+	.formValid
+		height: 60px
+		width: 70px
+.formCheck
+	height: 100%
+	background: url(../img/checkmark.png) no-repeat center center
+	background-size: 75%
+	textarea
+		resize: none
+		padding: 15px
+.popupBuyForm__Note
+	padding: 30px 15px
+	border-radius: 5px
+	background: rgba(0,0,0,0.5)
+	flex: 0 0 50%
+	max-width: 50%
+	margin-bottom: 12px
+	ul
+		list-style-type: none
+		color: #eee
+		padding: 0
+	li:first-child
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 20px
+	li
+		font-size: 32px
+		line-height: 1.25
+		text-align: left
+/* popup end */
+
+/* ------------------------------------- 
+	POPUP STYLE END
+	------------------------------------- */
 
 
 
